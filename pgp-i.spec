@@ -11,7 +11,7 @@ Source:		%{name}50i-unix-src.tar.gz
 Patch0:		%{name}50i-64bit-fix.diff
 Patch1:		%{name}-lang.patch
 URL:		http://www.pgpi.com/
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The PGP encryption suite is the defacto standard for Internet email
