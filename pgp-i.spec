@@ -2,8 +2,8 @@ Summary:	PGP File/email encryption tool
 Summary(pl):	PGP - narzêdzia do kodowania danych i poczty elektronicznej
 Name:		pgp
 Version:	5.0i
-Release:	3
-License:	free for non-commerical use
+Release:	4
+License:	Free for non-commerical use
 Group:		Applications/System
 Source0:	ftp://ftp.ifi.uio.no/pub/pgp/5.0/unix/%{name}50i-unix-src.tar.gz
 Patch0:		%{name}50i-64bit-fix.diff
@@ -65,17 +65,12 @@ cd src
 
 rm -f $RPM_BUILD_ROOT%{_bindir}/pgp_old
 
-cd ..
-gzip -9nf README-PGP WELCOME src/language50.txt src/plugins/{README,README-PINE}
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {README-PGP,WELCOME}.gz src/language50.txt.gz
-%doc src/plugins/*.gz
-
+%doc README-PGP WELCOME src/language50.txt src/plugins/{README,README-PINE}
 %attr(755,root,root) %{_bindir}/*
 
 %{_mandir}/man[157]/*
