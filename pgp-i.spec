@@ -7,9 +7,10 @@ Copyright:	free for non-commerical use
 Group:		Applications/System
 Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
-Source0:	ftp://ftp.ifi.uio.no/pub/pgp/5.0/international/unix/%{name}50i-unix-src.tar.gz
+Source0:	ftp://ftp.ifi.uio.no/pub/pgp/5.0/unix/%{name}50i-unix-src.tar.gz
 Patch0:		%{name}50i-64bit-fix.diff
 Patch1:		%{name}-lang.patch
+Patch2:		%{name}-remove_broken_asm.patch
 URL:		http://www.pgpi.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,6 +46,7 @@ Pakiet zawiera biblioteki statyczne dla PGP.
 %endif
 
 %patch1 -p1
+%patch2 -p1
 
 %build
 cd src
