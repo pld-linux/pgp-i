@@ -48,7 +48,7 @@ Pakiet zawiera biblioteki statyczne dla PGP.
 cd src
 %configure
 
-make OPT="$RPM_OPT_FLAGS"
+%{__make} OPT="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -57,7 +57,7 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 mv README README-PGP
 
 cd src
-make \
+%{__make} \
     prefix=$RPM_BUILD_ROOT%{_prefix} \
     libdir=$RPM_BUILD_ROOT%{_libdir} \
     bindir=$RPM_BUILD_ROOT%{_bindir} \
