@@ -4,8 +4,9 @@ Name:		pgp
 Version:	5.0i
 Release:	3
 Copyright:	free for non-commerical use
-Group:		Utilities/System
-Group(pl):	Narzêdzia/System
+Group:		Applications/System
+Group(de):	Applikationen/System
+Group(pl):	Aplikacje/System
 Source0:	ftp://ftp.ifi.uio.no/pub/pgp/5.0/international/unix/%{name}50i-unix-src.tar.gz
 Patch0:		%{name}50i-64bit-fix.diff
 Patch1:		%{name}-lang.patch
@@ -25,6 +26,7 @@ do kodowania danych.
 Summary:	PGP static library
 Summary(pl):	Biblioteki statyczne dla PGP
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name} = %{version}
@@ -48,13 +50,13 @@ Pakiet zawiera biblioteki statyczne dla PGP.
 cd src
 %configure
 
-%{__make} OPT="$RPM_OPT_FLAGS"
+%{__make} OPT="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_bindir}
-mv README README-PGP
+mv -f README README-PGP
 
 cd src
 %{__make} \
@@ -65,11 +67,9 @@ cd src
     install
 
 rm -f $RPM_BUILD_ROOT%{_bindir}/pgp_old
-strip $RPM_BUILD_ROOT%{_bindir}/{pgp,pgpk}
 
 cd ..
-gzip -9nf README-PGP WELCOME src/language50.txt \
-	$RPM_BUILD_ROOT%{_mandir}/man[157]/* src/plugins/{README,README-PINE}
+gzip -9nf README-PGP WELCOME src/language50.txt src/plugins/{README,README-PINE}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
