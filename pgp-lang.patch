@@ -1,0 +1,12 @@
+diff -Nur pgp50i/src/lib/pgp/utils/pgpFileType.c pgp50i.pld/src/lib/pgp/utils/pgpFileType.c
+--- pgp50i/src/lib/pgp/utils/pgpFileType.c	Sat Aug  9 23:44:33 1997
++++ pgp50i.pld/src/lib/pgp/utils/pgpFileType.c	Wed Jan 27 17:56:56 1999
+@@ -185,7 +185,7 @@
+ pgpFileTypeBinary(char const *lang, byte const *buf, unsigned len)
+ 	{
+ 			unsigned highlimit;
+-			char c;
++			unsigned c;
+ 
+ 			if (!len)
+ 				 return 1;		/* empty file or error, not a text file */

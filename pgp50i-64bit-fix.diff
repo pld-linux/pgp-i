@@ -1,0 +1,20 @@
+*** src/lib/pgp/include/pgpUsuals.h~    Sat Aug  9 22:44:58 1997
+--- src/lib/pgp/include/pgpUsuals.h     Tue Aug 12 16:57:16 1997
+***************
+*** 50,57 ****
+  */
+  #if ULONG_MAX > 0xfffffffful
+  #if ULONG_MAX == 0xfffffffffffffffful
+! typedef ulong bnword64;
+! #define BNWORD64 bnword64
+  #define HAVE64 1
+  #endif
+  #endif
+--- 50,56 ----
+  */
+  #if ULONG_MAX > 0xfffffffful
+  #if ULONG_MAX == 0xfffffffffffffffful
+! typedef ulong word64;
+  #define HAVE64 1
+  #endif
+  #endif
