@@ -30,10 +30,10 @@ Requires:	%{name} = %{version}
 %description static
 This package contains the PGP static libraries.
 
-%description -l pl static
+%description static -l pl
 Pakiet zawiera biblioteki statyczne dla PGP.
 
-%prep 
+%prep
 %setup  -q -n %{name}50i
 
 %ifarch alpha
