@@ -6,8 +6,7 @@ Release:	3
 Copyright:	free for non-commerical use
 Group:		Utilities/System
 Group(pl):	Narzêdzia/System
-#######		ftp://ftp.ifi.uio.no/pub/pgp/5.0/international/unix
-Source:		%{name}50i-unix-src.tar.gz
+Source0:	ftp://ftp.ifi.uio.no/pub/pgp/5.0/international/unix/%{name}50i-unix-src.tar.gz
 Patch0:		%{name}50i-64bit-fix.diff
 Patch1:		%{name}-lang.patch
 URL:		http://www.pgpi.com/
@@ -18,14 +17,15 @@ The PGP encryption suite is the defacto standard for Internet email
 encryption. See "man 7 pgp-intro" for more details.
 
 %description -l pl
-Pakiet zawiera pgp - aplikacjê, która jest defacto standardem dla kodowania
-poczty elektronicznej (email), jak równie¿ mo¿e byæ u¿ywana do kodowania 
-danych.
+Pakiet zawiera pgp - aplikacjê, która jest defacto standardem dla
+kodowania poczty elektronicznej (email), jak równie¿ mo¿e byæ u¿ywana
+do kodowania danych.
 
-%package	static
+%package static
 Summary:	PGP static library
 Summary(pl):	Biblioteki statyczne dla PGP
 Group:		Development/Libraries
+Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name} = %{version}
 
@@ -84,6 +84,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man[157]/*
 
 %files static
-%defattr(644,root,root,755) 
+%defattr(644,root,root,755)
 
 %{_libdir}/*.a
