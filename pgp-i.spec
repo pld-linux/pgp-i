@@ -5,8 +5,6 @@ Version:	5.0i
 Release:	3
 License:	free for non-commerical use
 Group:		Applications/System
-Group(de):	Applikationen/System
-Group(pl):	Aplikacje/System
 Source0:	ftp://ftp.ifi.uio.no/pub/pgp/5.0/unix/%{name}50i-unix-src.tar.gz
 Patch0:		%{name}50i-64bit-fix.diff
 Patch1:		%{name}-lang.patch
@@ -27,13 +25,6 @@ do kodowania danych.
 Summary:	PGP static library
 Summary(pl):	Biblioteki statyczne dla PGP
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description static
