@@ -9,7 +9,7 @@ Group(pl):   Narzêdzia/Pliki
 Source:      ftp://ftp.ifi.uio.no/pub/pgp/5.0/international/unix/%{name}50i-unix-src.tar.gz
 Patch:       %{name}50i-64bit-fix.diff
 URL:         http://www.pgpi.com/
-BuildRoot:   /tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 The PGP encryption suite is the defacto standard for Internet email
