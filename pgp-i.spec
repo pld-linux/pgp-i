@@ -87,24 +87,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755) 
 
 %{_libdir}/*.a
-
-%changelog
-* Sun Apr  4 1999 Piotr Czerwiñski <pius@pld.org.pl>
-  [5.0i-3]
-- changed Buildroot to /tmp/%%{name}-%%{version}-root,
-- added Group(pl),
-- added gzipping documentation and man pages,
-- removed man group from man pages,
-- removed 'rm -f plugins/Makefil*' from %install,
-- cosmetic changes for common l&f.
-
-* Sat Nov 21 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [5.0i-2]
-- fixed passing $RPM_OPT_FLAGS,
-- removed src/plugins from %doc.
-
-* Sat Aug 01 1998 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
-  [5.0i-1]
-- added pl translation,
-- added static package,
-- minor modifications of spec file.
