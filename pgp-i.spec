@@ -47,12 +47,12 @@ make OPT="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/bin
+install -d $RPM_BUILD_ROOT%{_bindir}
 
 cd src
 make install
 
-rm -f $RPM_BUILD_ROOT/usr/bin/pgp_old
+rm -f $RPM_BUILD_ROOT%{_bindir}/pgp_old
 
 cd ..
 gzip -9nf README WELCOME src/README src/language50.txt \
@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc {README,WELCOME,src/README,src/language50.txt}.gz
-%attr(755,root,root) /usr/bin/*
+%attr(755,root,root) %{_bindir}/*
 %{_mandir}/man[157]/*
 
 %files static
