@@ -3,7 +3,7 @@ Summary(pl):	PGP - narzêdzia do kodowania danych i poczty elektronicznej
 Name:		pgp
 Version:	5.0i
 Release:	3
-Copyright:	free for non-commerical use
+License:	free for non-commerical use
 Group:		Applications/System
 Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
