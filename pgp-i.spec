@@ -56,7 +56,7 @@ rm -f $RPM_BUILD_ROOT/usr/bin/pgp_old
 
 cd ..
 gzip -9nf README WELCOME src/README src/language50.txt \
-	$RPM_BUILD_ROOT/usr/man/man[157]/*
+	$RPM_BUILD_ROOT%{_mandir}/man[157]/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -65,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {README,WELCOME,src/README,src/language50.txt}.gz
 %attr(755,root,root) /usr/bin/*
-/usr/man/man[157]/*
+%{_mandir}/man[157]/*
 
 %files static
 %attr(644,root,root) /usr/lib/*.a
