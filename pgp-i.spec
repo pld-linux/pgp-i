@@ -48,7 +48,7 @@ Pakiet zawiera biblioteki statyczne dla PGP.
 
 %build
 cd src
-%configure
+%configure2_13
 
 %{__make} OPT="%{rpmcflags}"
 
