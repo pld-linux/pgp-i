@@ -68,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man[157]/*
 
 %files static
-%attr(644,root,root) /usr/lib/*.a
+%attr(644,root,root) %{_libdir}/*.a
 
 %changelog
 * Sun Apr  4 1999 Piotr Czerwiñski <pius@pld.org.pl>
