@@ -41,7 +41,7 @@ Pakiet zawiera biblioteki statyczne dla PGP.
 
 %build
 cd src
-./configure %{_target} \
+./configure %{_target_platform} \
 	--prefix=$RPM_BUILD_ROOT/usr
 make OPT="$RPM_OPT_FLAGS"
 
