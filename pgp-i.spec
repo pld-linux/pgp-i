@@ -35,7 +35,7 @@ This package contains the PGP static libraries.
 Pakiet zawiera biblioteki statyczne dla PGP.
 
 %prep
-%setup  -q -n %{name}50i
+%setup -q -n %{name}50i
 
 %ifarch alpha
 %patch -p0
@@ -58,11 +58,11 @@ mv -f README README-PGP
 
 cd src
 %{__make} \
-    prefix=$RPM_BUILD_ROOT%{_prefix} \
-    libdir=$RPM_BUILD_ROOT%{_libdir} \
-    bindir=$RPM_BUILD_ROOT%{_bindir} \
-    mandir=$RPM_BUILD_ROOT%{_mandir} \
-    install
+	prefix=$RPM_BUILD_ROOT%{_prefix} \
+	libdir=$RPM_BUILD_ROOT%{_libdir} \
+	bindir=$RPM_BUILD_ROOT%{_bindir} \
+	mandir=$RPM_BUILD_ROOT%{_mandir} \
+	install
 
 rm -f $RPM_BUILD_ROOT%{_bindir}/pgp_old
 
