@@ -6,6 +6,7 @@ Release:	4
 License:	Free for non-commerical use
 Group:		Applications/System
 Source0:	ftp://ftp.ifi.uio.no/pub/pgp/5.0/unix/%{name}50i-unix-src.tar.gz
+# Source0-md5:	7a01203f0053aa78a781367461d52187
 Patch0:		%{name}50i-64bit-fix.diff
 Patch1:		%{name}-lang.patch
 Patch2:		%{name}-remove_broken_asm.patch
