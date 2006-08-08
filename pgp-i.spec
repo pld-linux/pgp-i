@@ -38,7 +38,7 @@ Pakiet zawiera biblioteki statyczne dla PGP.
 %setup -q -n %{name}50i
 
 %ifarch alpha
-%patch -p0
+%patch0 -p0
 %endif
 
 %patch1 -p1
