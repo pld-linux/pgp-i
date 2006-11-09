@@ -26,7 +26,7 @@ do kodowania danych.
 Summary:	PGP static library
 Summary(pl):	Biblioteki statyczne dla PGP
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description static
 This package contains the PGP static libraries.
