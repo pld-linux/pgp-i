@@ -1,5 +1,5 @@
 Summary:	PGP File/email encryption tool
-Summary(pl):	PGP - narzêdzia do kodowania danych i poczty elektronicznej
+Summary(pl.UTF-8):   PGP - narzÄ™dzia do kodowania danych i poczty elektronicznej
 Name:		pgp
 Version:	5.0i
 Release:	4
@@ -17,21 +17,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The PGP encryption suite is the defacto standard for Internet email
 encryption. See "man 7 pgp-intro" for more details.
 
-%description -l pl
-Pakiet zawiera pgp - aplikacjê, która jest defacto standardem dla
-kodowania poczty elektronicznej (email), jak równie¿ mo¿e byæ u¿ywana
+%description -l pl.UTF-8
+Pakiet zawiera pgp - aplikacjÄ™, ktÃ³ra jest defacto standardem dla
+kodowania poczty elektronicznej (email), jak rÃ³wnieÅ¼ moÅ¼e byÄ‡ uÅ¼ywana
 do kodowania danych.
 
 %package static
 Summary:	PGP static library
-Summary(pl):	Biblioteki statyczne dla PGP
+Summary(pl.UTF-8):   Biblioteki statyczne dla PGP
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description static
 This package contains the PGP static libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Pakiet zawiera biblioteki statyczne dla PGP.
 
 %prep
