@@ -1,5 +1,5 @@
 Summary:	PGP File/email encryption tool
-Summary(pl.UTF-8):   PGP - narzędzia do kodowania danych i poczty elektronicznej
+Summary(pl.UTF-8):	PGP - narzędzia do kodowania danych i poczty elektronicznej
 Name:		pgp
 Version:	5.0i
 Release:	4
@@ -24,7 +24,7 @@ do kodowania danych.
 
 %package static
 Summary:	PGP static library
-Summary(pl.UTF-8):   Biblioteki statyczne dla PGP
+Summary(pl.UTF-8):	Biblioteki statyczne dla PGP
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
